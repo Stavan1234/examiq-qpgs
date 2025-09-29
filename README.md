@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 ExamIQ – Question Paper Generation System (QPGS 1.0)
 
-## Getting Started
+ExamIQ is a modern web-based system designed to **simplify and automate the process of question paper generation** for colleges and universities.  
+It reduces the workload on exam cells and teachers by streamlining task allocation, question management, and final paper generation with AI assistance.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+- **Role-based Access**
+  - Exam Cell: Create tasks, allocate teachers, manage deadlines, generate final papers.
+  - Teachers: Add/edit only their allocated questions, upload diagrams and equations.
+- **Automatic Paper Generation**
+  - AI-powered MCQ creation from lecture summaries (via ChatGPT/Gemini API).
+  - Randomized selection of questions from teacher pools for fairness.
+- **Smart File Handling**
+  - Upload diagrams and formulas.
+  - OCR support for labels/symbols (Tesseract.js).
+  - Clean/scanned diagrams with OpenCV.
+- **PDF Export**
+  - Generate final exam-ready papers with headers, sections, and formatting.
+- **Minimal, Fast UI**
+  - Built with modern design principles: clean, responsive, and distraction-free.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Next.js 15 (React), Tailwind CSS, ShadCN UI  
+- **Backend:** Next.js API Routes  
+- **Database:** MongoDB (JSON-like storage for questions/papers)  
+- **Authentication:** NextAuth.js (role-based login: Teacher / Exam Cell)  
+- **AI Integration:** ChatGPT/Gemini API (for auto question generation)  
+- **OCR & Image Processing:** Tesseract.js + OpenCV  
+- **PDF Export:** jsPDF  
+
+---
+
+## 📂 Project Structure
+```
+src/
+├── app/          # Routes (login, dashboard, exam tasks, etc.)
+├── components/   # Reusable UI components
+│   ├── common/   # Shared UI (Sidebar, Header, Layouts)
+│   ├── pages/    # Page-specific UI
+│   └── ui/       # ShadCN components
+├── lib/utils/    # Helper functions (date, PDF, formatting)
+├── notes/        # Documentation for contributors
+└── utilities/    # Scripts, mock data, seeding
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👥 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js (v20 LTS or higher)
+- npm (comes with Node.js) or yarn
+- Git
 
-## Learn More
+### Setup
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Stavan1234/examiq-qpgs.git
+   cd examiq-qpgs
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+### 🧑‍🤝‍🧑 Team Workflow
+- **Branch Naming Convention**:
+  - `feature/login`
+  - `feature/dashboard`
+  - `feature/exam-tasks`
+- **Commit Messages**:
+  - `feat: add login form`
+  - `fix: sidebar alignment`
+- **Collaboration**:
+  - Push changes and create Pull Requests (PRs) for review.
+  - Use GitHub Issues to assign tasks and Discussions for communication.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📌 Roadmap
+- Build login & role-based dashboard
+- Implement teacher question entry system
+- Add exam cell allocation + paper generation
+- Integrate AI (ChatGPT/Gemini API) for MCQ creation
+- Add OCR for diagrams and formulas
+- Finalize PDF export & download
+
+---
+
+## 📜 License
+This project is for academic purposes under an open MIT license.  
+You are free to use, adapt, and improve it with attribution.
+
+---
+
+## 🔖 Authors
+- David Almieda
+- Anurodh Chandanshiv
+- Stavan Kalkumbe
+- Joshua Jaison
+
+---
+
+### Notes
+- Ensure all collaborators accept the GitHub invitation and set their Git identity (`git config --global user.name "TheirName" && git config --global user.email "their.email@example.com"`) before contributing.
+- For issues or suggestions, use the GitHub Issues tab.
+

@@ -1,4 +1,4 @@
-### Collaborating with Friends on GitHub as the Repo Owner
+### Collaborating with Friends on GitHub as the Repo Owner (Preview: ctrl+shift+v)
 
 Since you are the repository owner and have already sent collaboration invitations to your friends via GitHub, they need to accept the invitation and follow these steps to join the project and manage their contributions effectively. As the owner, you’ve granted them collaborator access, allowing them to push changes, create branches, and manage issues. Here’s how they can get started and control their work:
 

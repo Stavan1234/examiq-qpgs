@@ -1,4 +1,4 @@
-# ExamIQ Project Notes
+# ExamIQ Project Notes (Preview ctrl+shift+v)
 
 This README provides quick guides for Git commands and project structure. It's designed for team collaboration on the ExamIQ app (Next.js frontend for Admin/Exam Cell UI). Follow these to set up, code, and push changes efficiently.
 

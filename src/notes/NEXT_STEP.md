@@ -1,4 +1,4 @@
-### Next Steps for the ExamIQ Project
+### Next Steps for the ExamIQ Project (Preview ctrl+shift+v)
 
 Now that you’ve set up the initial project structure, resolved the Git issue, and have the UI designs confirmed with the new images, here’s a detailed roadmap to proceed with implementing the Login Page, Admin Dashboard, Create New Exam Task, and Final Preview & Generation screens. These steps will guide you and your team to build the UI/UX effectively using Next.js, shadcn/ui, and other libraries, while ensuring smooth collaboration via GitHub. The current time is 10:17 PM IST on Monday, September 29, 2025, so plan your work accordingly.
 

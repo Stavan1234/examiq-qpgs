@@ -55,7 +55,7 @@ I'm a beginner with Next.js, and I have this dependency conflict error: [INSERT 
 
 **Template**:
 ```
-As a noob developer, help me build a new feature for ExamIQ: [DESCRIBE FEATURE, e.g., a dynamic form section builder in React]. Use Next.js, Tailwind, shadcn/ui, and react-hook-form. Provide the full code for the component, including imports and state management. Match this UI description/screenshot: [INSERT UI DESCRIPTION OR LINK SCREENSHOT].
+As a beginner developer, help me build a new feature for ExamIQ: [DESCRIBE FEATURE, e.g., a dynamic form section builder in React]. Use Next.js, Tailwind, shadcn/ui, and react-hook-form. Provide the full code for the component, including imports and state management. Match this UI description/screenshot: [INSERT UI DESCRIPTION OR LINK SCREENSHOT].
 ```
 
 **Customization Instructions**:
